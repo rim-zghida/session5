@@ -1,0 +1,252 @@
+@font-face {
+  font-family: ruhl-m;
+  src: url(./fonts/FrankRuhlLibre-Medium.ttf);
+}
+
+@font-face {
+  font-family: ruhl-l;
+  src: url(./fonts/FrankRuhlLibre-Regular.ttf);
+}
+
+@font-face {
+  font-family: greatvibes;
+  src: url(./fonts/GreatVibes-Regular.ttf);
+}
+body {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-head {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.main-head nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  height: 10vh;
+}
+.main-head ul {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  list-style: none;
+}
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 3rem;
+}
+#logo {
+  font-size: 2rem;
+  font-family: greatvibes, sans-serif;
+}
+.hero {
+  display: flex;
+  overflow: hidden;
+  min-height: 90vh;
+}
+.hero-introduction h2 p {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 2rem;
+}
+@keyframes plantAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+.plant1 {
+  right: 60%;
+  z-index: -1;
+  animation: plantAnimation 2s infinite ease-in-out alternate;
+}
+.plant2 {
+  animation: plantAnimation 3s infinite ease-in-out alternate;
+  left: 35%;
+  z-index: -1;
+}
+.plant {
+  position: absolute;
+  max-height: 80%;
+  bottom: 0px;
+}
+.hero-elena {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-images {
+  position: relative;
+  background-color: rgb(209, 206, 206);
+  flex: 1;
+  z-index: 1;
+}
+.hero-introduction {
+  flex: 2;
+}
+.hero-introduction h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5rem;
+}
+.hero-introduction p {
+  color: rgb(124, 119, 119);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-introduction a {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+
+  border-style: solid;
+  margin: 45%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#about {
+  justify-content: space-between;
+  display: flex;
+
+  font-size: 25px;
+  color: rgb(221, 216, 216);
+}
+.about-text {
+  background-color: rgb(71, 68, 68);
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-text h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  padding: 40px;
+}
+.about-life {
+  padding: 20px;
+}
+.about-contact {
+  padding: 30px;
+}
+.about-work {
+  padding: 20px;
+  margin-left: 0px;
+}
+.about-image h5 {
+  position: absolute;
+  padding: 9.5rem;
+  letter-spacing: 1rem;
+  color: black;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+.gallery2 {
+  grid-area: gallery2;
+}
+.gallery1 {
+  grid-area: gallery1;
+}
+
+.gallery3 {
+  grid-area: gallery3;
+}
+.gallery4 {
+  grid-area: gallery4;
+}
+.gallery {
+  width: 100%;
+  font-size: 30px;
+  display: grid;
+  grid-template-areas:
+    "gallery1 gallery1 gallery2 "
+    "gallery3 gallery4 gallery2";
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+}
+.form-wrapper {
+  margin-left: 17rem;
+}
+.form-wrapper h2 {
+  font-size: 35px;
+  font-family: ruhl-l;
+}
+.form-wrapper input {
+  background-color: rgb(63, 62, 62);
+  box-shadow: none;
+  padding: 10px;
+
+  margin: 16px;
+  margin-left: -2px;
+  border-style: none;
+}
+.form-wrapper button {
+  padding: 10px 73px 10px 73px;
+  border-style: none;
+  background-color: rgb(115, 60, 110);
+  cursor: pointer;
+  color: rgb(252, 246, 246);
+}
+button:hover {
+  background-color: rgb(64, 94, 139);
+}
+.form-wrapper span {
+  font-size: 60px;
+  color: rgb(117, 68, 111);
+  font-family: ruhl-m;
+}
+.form-wrapper label {
+  font-size: 20px;
+  font-family: ruhl-m;
+}
+footer {
+  background-color: rgb(71, 70, 70);
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  padding-right: 40px;
+  flex: 2 2 10rem;
+
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  color: white;
+  padding-left: 50px;
+
+  padding-right: 50%;
+  font-size: 16px;
+}
